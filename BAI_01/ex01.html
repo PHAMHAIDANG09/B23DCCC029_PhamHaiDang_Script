@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            table,th,td {
+                border: 1px  rgb(148, 148, 148)
+            }
+            th,td {
+                border-style: solid;
+                
+            }
+        </style>
+        <style>
+            html, body {
+                margin: 0;
+                padding: 0;
+                height: 100%;
+            }
+            table {
+                width: 100%;
+                text-align: left;
+                border-collapse: collapse;
+            }
+            th, td {
+                border: 1px solid rgb(226, 226, 226);
+                padding: 8px;
+            }
+            .container {
+                display: flex;
+                height: 100%; 
+            }
+            .table-wrapper {
+                    margin-right: 10px;
+                }
+                .table-wrapper:first-child table {
+                    width: 20%;
+                }
+                .table-wrapper:nth-child(2) table {
+                    width: 60%;
+                }
+                .table-wrapper:last-child table {
+                    width: 20%;
+                }
+
+            a {
+                color:aliceblue;
+
+                text-decoration: none;
+                }
+            h1,h2 {
+                color: rgb(8, 129, 129);
+
+            }
+            .container2 {
+                border: 1px solid gray;
+                display: grid;
+                grid-template-columns: repeat(5,180px);
+                grid-template-rows: repeat(11,55px);
+                grid-template-areas: 
+                "ato ato ato cha1 cha1"
+                "ato ato ato cha1 cha1"
+                "ato ato ato cha2 cha2"
+                "ato ato ato cha2 cha2"
+                "ato ato ato cha3 cha3"
+                "ato ato ato cha4 cha4"
+                "ato ato ato cha5 cha5"
+                "tde tde tde cha5 cha5"
+                "dvan dvan dvan cha cha"
+                "dvan dvan dvan o o"
+                "dvan dvan dvan o o"
+               
+                
+                
+            }
+            .item {
+                border: 1px solid white;
+            }
+            .item6 {
+                grid-area: ato;
+
+            }
+            .item7 {
+                grid-area: tde;
+            }
+            .item8 {
+                grid-area: dvan;
+            }
+            .item1 {
+                grid-area: cha1;
+            }
+            .item2 {
+                grid-area: cha2;
+            }
+            .item3 {
+                grid-area: cha3;
+            }
+            .item4 {
+                grid-area: cha4;
+            }
+            .item5 {
+                grid-area: cha5;
+            }
+           
+            
+           
+        </style>
+        
+    </head>
+    <body>
+        <table>
+            <th style="background-color: rgb(177, 177, 246);height: 100%; ">
+                <a href="https://www.w3schools.com/html/html_links.asp">Giới thiệu |</a>
+                <a href="https://www.w3schools.com/html/html_links.asp"> Tin tức |</a>
+                <a href="https://www.w3schools.com/html/html_links.asp"> Thành viên |</a>
+                <a href="https://www.w3schools.com/html/html_links.asp"> Thống kê |</a>
+                <a href="https://www.w3schools.com/html/html_links.asp"> Thăm dò ý kiến |</a>
+                <a href="https://www.w3schools.com/html/html_links.asp"> Tìm kiếm |</a>
+                <a href="https://www.w3schools.com/html/html_links.asp"> Liên hệ</a>
+                </th>
+        </table>
+        <table >
+            <th style="background-color: rgb(190, 199, 199);">
+                thứ năm 20/6/2021,0:21
+            </th>
+        </table>
+        <div class="container">
+            <div class="table-wrapper">                
+                
+                <table >
+                    <tr style="background-color: rgb(73, 73, 169);height:200px ;" >
+                        <td>
+                            <a href="https://www.w3schools.com/html/html_links.asp">Tin tức</a><br><a>   </a><br>
+                            <a href="https://www.w3schools.com/html/html_links.asp">Sản Phẩm</a><br><a>   </a><br>
+                            <a href="https://www.w3schools.com/html/html_links.asp">Đối tác</a><br><a>   </a><br>
+                            <a href="https://www.w3schools.com/html/html_links.asp">Tuyển dụng</a><a>   </a><br>
+                           
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="anh-1.png" width="250px" height="250px">
+                        </td>
+
+                        
+                        
+                    </tr>
+                    <tr>
+                        <td><img src="anh-2.png" width="250px" height="600px"></td>
+                    </tr>
+
+                </table>
+            </div>
+            <div class="table-wrapper">                   
+                        <div class="container2">
+                        <td >
+                          <div class="item6 item">
+                            <img src="anh-10.jpeg" width="500px" height="400px">
+                          </div>  
+                          <div class="item7 item">
+                            <h2>Học lập trình tại Zent có gì mới?</h2>
+                          </div>
+                          <div class="item8 item"> 
+                            <b>Phương pháp học tập cực kì mới với đội ngũ giảng viên,<br>
+                                trợ giảng nhiệt tình mang lại nhiều kiến thức bổ ích cho<br>
+                                 học viên</b>
+                           </div>                       
+                            <div class="item1 item">
+                                <b>* Hãy trở thành đối tác của Zent</b>
+                                <img src="anh-3.png" height="70px" width="100px" ><br>
+                            </div> 
+                            <div class="item2 item">
+                                <b>* Học viên Zent đã làm việc tại
+                                     đâu</b> 
+                                <img src="anh-4.png"height="70px"width="100px"><br>
+                            
+                            <div class="item3 item">
+                                <b>* Tuyển dụng kỹ sư lập trình công nghệ thông tin</b>
+                                <img src="anh-5.png"height="70px"width="100px"><br>
+                            </div>
+                            <div class="item4 item">
+                                <b>* Khoá học lập trình C cơ bản</b>
+                                <img src="anh-6.png"height="70px"width="100px"><br>
+                            </div>
+                            
+                            <div class="item5 item">
+                                <b>* Hãy trở thành đối tác của Zent</b>
+                                <img src="anh-7.png"height="70px"width="100px"><br>
+                            </div>
+                        </div>   
+                        </td>
+                        </div>
+                 </div>
+            <div class="table-wrapper">
+                <table>
+                    
+                    <tr>
+                        <td><h2>Giới thiệu Zent</h2><br>
+                            <b>ZENT EDUCATION được thành lập với triết lý "Không cứ phải là thần đồng, không cứ phải là giàu có, chỉ cần có phương pháp giáo dục đúng đắn,tích cực mọi đứa trẻ sẽ trở thành nhân tài"được viết trong cuôn sách nổi tiếng "Em phải đến Havard học kinh tế.</b>
+                            <img src="anh-8.png" width="250px" height="250px"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="anh-2.png" width="250px" height="600px"></td>
+                    </tr>
+                </table>    
+            </div>    
+        </div>
+    </body>
+</html>
