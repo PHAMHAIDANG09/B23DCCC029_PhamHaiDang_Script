@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let giaithua=1;
+        
+        function tinhgiaithua(a){
+            for (let i=2;i<=a;i++){
+                giaithua=giaithua*i
+            }
+            return giaithua
+        }
+        so=prompt("Nhập vào số bạn muốn tính giai thừa:")
+        ketqua=tinhgiaithua(so);
+        document.write(so+" giai thừa= "+ketqua)
+    </script>
+</body>
+</html>
