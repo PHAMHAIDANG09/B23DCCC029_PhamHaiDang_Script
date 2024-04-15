@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const mang=[1,3,5,8,1,22,11,12,15,16,-10];
+        mang2=mang.sort(function(a,b){return(a-b)})
+        
+        document.write("số lớn nhất trong mảng:",mang2[mang2.length-1])
+        function ktranguyen(so){
+            const cannguyen=Math.sqrt(so);
+            return cannguyen===Math.floor(cannguyen);
+        }
+        
+        function timsochinhphuong(arr) {
+            const sochinhphuong=[];
+            for (let i  = 0;i<arr.length;i++){
+              if  (ktranguyen(arr[i])){
+                sochinhphuong.push(arr[i]);
+              }
+            }
+            return sochinhphuong
+        }
+        document.write("<br>các số chính phương trong mảng là:",timsochinhphuong(mang))
+        function tinhtrungbinhcong(arr){
+            const sum=arr.reduce((so1,so2)=>so1+so2,0);
+            tbc=sum/arr.length;
+            return tbc;
+
+        }
+        function cac(arr){
+            const cacsolonhontbc=[];
+            for (let i=0;i<arr.length;i++){
+                if (arr[i]>tinhtrungbinhcong(arr)){
+                cacsolonhontbc.push(arr[i]);
+                }
+            }
+            return cacsolonhontbc
+        }
+        document.write("<br>các số lớn hơn trung bình cộng của mảng là:",cac(mang))
+        function tbc0am(arr){
+            const cacsokhongam=[];
+            for (let i=0;i<arr.length;i++){
+                if (arr[i]>=0){
+                    cacsokhongam.push(arr[i])
+                }
+            }
+            return tinhtrungbinhcong(cacsokhongam)
+        }
+        document.write("<br>trung bình cộng các số không âm là:",tbc0am(mang))
+    </script
+</body>
+</html>
