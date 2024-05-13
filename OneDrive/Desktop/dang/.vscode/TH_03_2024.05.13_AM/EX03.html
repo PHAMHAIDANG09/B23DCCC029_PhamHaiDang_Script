@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chuyển ảnh</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        .anh {
+        position: relative;
+        width: 400px;
+        height: 200px;
+        overflow: hidden;
+        margin: 20px auto;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+    }
+    .img {
+        position: absolute;
+        width: 400px;
+        height: 200px;
+        top: 0;
+        display: none;
+    }
+    #buttonleft,#buttonright {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        border: none;
+        padding: 5px 10px;
+        font-size: 18px;
+        cursor: pointer;
+    }
+    #buttonleft {
+        left: 10px;
+    }
+    #buttonright{
+        right: 10px;
+    }
+    </style> 
+</head>
+<body>
+   <div class="anh"> 
+    <img class="img" src="hinh-nen-may-tinh-dep-ngau-4k.jpg" id="image1">
+    <img class="img" src="pngtree-blue-sky-clouds-flowers-beautiful-mood-oil-painting-illustration-background-image_2133358.jpg" id="image2">
+    <img class="img" src="Screenshot (1).png" id="image3">
+    <button id="buttonright">next</button>
+    <button id="buttonleft">back</button>
+   </div> 
+   <script>
+    $(document).ready(function(){
+        var currentimg = 1;
+        function doianh(direction){
+            $(".img").hide();
+            if (direction==="left"){
+                currentimg=(currentimg===1)?3:currentimg -1 ;
+
+            }
+            else {
+                currentimg=(currentimg===3)?1:currentimg +1 ;
+            }
+            $("#image" + currentimg).show();
+
+
+        };
+    $("#buttonright").click(function(){
+        doianh("right");
+    });
+    $("#buttonleft").click(function(){
+        doianh("left");
+    });    
+    setInterval(function(){
+        doianh("right")
+    },5000 );
+        
+        
+    });
+   </script>
+</body>
+</html>
