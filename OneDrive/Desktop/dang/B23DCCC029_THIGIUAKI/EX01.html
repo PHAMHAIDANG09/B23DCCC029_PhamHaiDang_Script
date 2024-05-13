@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a1 {text-align: center;
+            margin-top: 50px;
+            }
+          input[type="text"], button {
+            margin: 5px;
+          }  
+    </style>
+ 
+</head>
+<body>
+    <h1 style="margin-top: 50px;">Tính Toán</h1>
+    <script>
+        function tong(form){
+            a=eval(form.a.value);
+            b=eval(form.b.value);
+            c=a+b;
+            form.ans.value = c;
+        }
+        function hieu(form){
+            a=eval(form.a.value);
+            b=eval(form.b.value);
+            c=a-b;
+            form.ans.value = c;
+        }
+        function tich(form){
+            a=eval(form.a.value);
+            b=eval(form.b.value);
+            c=a*b;
+            form.ans.value = c;
+        }function thuong(form){
+            a=eval(form.a.value);
+            b=eval(form.b.value);
+            c=a/b;
+            form.ans.value = c;
+        }
+       
+                      
+    </script>
+        <div class="a1" >
+            <form name="formX">
+                <p>
+                    <input type="number" step="any" pattern="[-+]?[0-9]*[.,]/[0-9]+"title="nhập chưa đúng kiểu dữ liệu vui lòng nhập lại" size="5" placeholder="Nhập vào số A.." name="a">
+                    <br>
+                    <input type="number" size="5" placeholder="Nhập vào số B.." name="b">
+        <input type="button" value="SUM" onclick="tong(document.formX)"/>
+        <input type="button" value="SUBTRACT" onclick="hieu(document.formX)"/>     
+        <input type="button" value="MULTIPLY" onclick="tich(document.formX)"/>     
+        <input type="button" value="DIVIDE" onclick="thuong(document.formX)"/> 
+        <input type="text" value="0" name="ans" size="10" readonly/>  
+        <input type="reset">          
+                </p>
+            </form>    
+        </div>       
+    
+    
+</body>
+</html>

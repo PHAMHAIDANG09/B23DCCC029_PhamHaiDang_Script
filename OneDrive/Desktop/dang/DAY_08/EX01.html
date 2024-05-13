@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src=""></script>
+</head>
+<body>
+   
+    <label for="password">Mật khẩu:</label>
+    <input type="password" id="password" name="password">
+    <button id="toggleButton">Hiện/Ẩn</button>
+    
+    <script>
+        $(document).ready(function(){
+            $("#toggleButton").click(function(){
+                var passwordInput = $("#password");
+                
+                if(passwordInput.attr("type") === "password"){
+                    passwordInput.attr("type", "text");
+                    $(this).text("Ẩn");
+                } else {
+                    passwordInput.attr("type", "password");
+                    $(this).text("Hiện");
+                }
+            });
+        });
+    </script>
+   
+
+</body>
+</html>

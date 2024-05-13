@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .tde{color: green;}
+            table,th,td {
+            border: 1px solid black;
+                }
+        </style>
+    </head>
+    <body>
+    <table style="width:50%">
+        <th>
+         <h2>Creat account</h2>
+        </th>
+    
+    </table>
+    <form>
+    <table style="width:50%">
+        <tr>
+            <td>
+                
+                <label for="fname"class="tde">firstname:</label><br>
+                <input type="text" id="fname" name="fname" placeholder="enter your fisrt name"><br>
+                
+                
+            </td>   
+            <td>    
+               
+                <label for="lname"class="tde">lastname:</label><br>
+                <input type="text" id="lname" name="lname" placeholder="enter your last name">
+               
+            </td>
+        </tr>
+        <tr >
+            <td colspan="2">
+               
+                    <label for="email"class="tde">email:</label><br>
+                    <input type="email" id="email" name="email" placeholder="enter your email">
+            
+            </td>
+            
+        </tr>
+        <tr>
+            <td>
+              
+                    <label for="password"class="tde">password</label><br>
+                    <input type="password" id="password" name="password" placeholder="enter your password">
+           
+            </td>
+            <td> <label for="password"class="tde">confirmpassword</label><br>
+                <input type="password" id="password" name="password" placeholder="enter your password again"></td>
+        </tr>
+        <tr>
+            <td>
+                
+                    <label class="tde"> Gender:</label><br>  
+                    <input type="radio" id="male" name="gioitinh" value="Male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gioitinh" value="Female">
+                    <label for="female">Female</label>
+            </td>
+            <td>
+                    <label class="tde">Hobbies:</label><br>
+                    <input type="checkbox" id="hb1" name="hb1" value="Music">
+                    <label for="hb1">Music</label>
+                    <input type="checkbox" id="hb2" name="hb2" value="Sport">
+                    <label for="hb2">Sport</label>
+                    <input type="checkbox" id="hb3" name="hb3" value="Transfer">
+                    <label for="hb3">Transfer</label>
+                    <input type="checkbox" id="hb4" name="hb4" value="Movie">
+                    <label for="hb4">Movie</label>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" >
+                <a class="tde">Source Of Income</a><br>
+                <input list="browsers" name="browser">
+                <datalist id="browsers">
+                  <option value="Edge">
+                  <option value="Firefox">
+                  <option value="Chrome">
+                  <option value="Opera">
+                  <option value="Safari">
+                </datalist>
+            </td>
+
+        </tr>
+        <tr>
+            <td >
+                <label for="files" class="tde" >Upload Profile Picture</label><br>
+                <input type="file" id="files" name="files" multiple>
+            </td>
+            <td >
+                <label for="tuoi"class="tde">Age</label><br>
+                <input type="number" id="tuoi" name="tuoi">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" >
+                <label  class="tde" for="bio" >Bio</label><br>
+                <textarea name="bio" rows="6" cols="95"></textarea>
+            </td>
+        </tr>
+
+    </table>
+    
+    <table >
+        <tr style="text-align: right;">
+            <button type="button">Creat</button> >
+        </tr>
+    </table>
+    
+
+    </form>
+    </body>
+
+
+
+
+</html>

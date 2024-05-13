@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Three Tables in a Row - Full Screen</title>
+<style>
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+    .container {
+        display: flex;
+        height: 100%;
+    }
+    .table-wrapper {
+        flex: 1;
+        margin-right: 10px;
+        box-sizing: border-box;
+    }
+    .table-wrapper:first-child table {
+        width: 20vw;
+    }
+    .table-wrapper:nth-child(2) table {
+        width: 60vw;
+    }
+    .table-wrapper:last-child table {
+        width: 20vw;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    th, td {
+        border: 1px solid black;
+        padding: 8px;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Header 1</th>
+                        <th>Header 2</th>
+                        <th>Header 3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Data 1</td>
+                        <td>Data 2</td>
+                        <td>Data 3</td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+            </table>  
+        </div>
+        <div class="table-wrapper">
+            <table>
+                <!-- Table 2 Content -->
+            </table>
+        </div>
+        <div class="table-wrapper">
+            <table>
+                <!-- Table 3 Content -->
+            </table>
+        </div>
+    </div>
+</body>
+</html>
