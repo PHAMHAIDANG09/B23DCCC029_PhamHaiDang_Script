@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>ES6</title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <script type="text/babel">
+    function number(num1, num2, ...numOther){
+  console.log("x:", num1); 
+  console.log("y:", num2);
+  console.log("Other number:", numOther);
+}
+number("one", "two", "three", "four", "five", "six");
+
+    </script>
+  </body>
+</html>
