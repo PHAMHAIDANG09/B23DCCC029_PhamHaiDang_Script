@@ -1,13 +1,17 @@
 const mongoose = require('mongoose');
 
 const orderSchema = new mongoose.Schema({
-  tableNumber: { type: Number, required: true },
+  tableNumber: {
+    type: Number,
+    required: true,
+  },
   items: [
     {
-      food: { type: mongoose.Schema.Types.ObjectId, ref: 'Food', required: true },
+      foodName: { type: String, required: true },
       quantity: { type: Number, required: true },
     },
   ],
-});
+  note: { type: String, default: '' }, // Thêm trường ghi chú
+}, { timestamps: true });
 
 module.exports = mongoose.model('Order', orderSchema);
