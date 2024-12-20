@@ -1,0 +1,89 @@
+/* Admin.css */
+
+body {
+  margin: 0; /* Loại bỏ khoảng trắng mặc định */
+  padding: 0;
+  background-image: url('./biaadmin.png');
+  background-size: cover; /* Ảnh phủ toàn bộ màn hình */
+  background-repeat: no-repeat; /* Không lặp lại ảnh */
+  background-position: center; /* Căn giữa ảnh */
+  background-attachment: fixed; /* Ảnh cố định khi cuộn */
+  font-family: Arial, sans-serif;
+  color: #fff;
+}
+
+.admin-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8); /* Nền đen mờ cho nội dung */
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #ffcc00;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Phần còn lại của CSS như trước */
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.orders-table th, 
+.orders-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #f0f0f0;
+}
+
+.orders-table th {
+  background-color: rgba(255, 204, 0, 0.9);
+  color: #000;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.orders-table tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.orders-table tr:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  color: #ffcc00;
+}
+
+.checkbox-group input[type="checkbox"] {
+  margin-right: 10px;
+  cursor: pointer;
+  accent-color: #ffcc00; /* Màu checkbox */
+}
+
+p {
+  text-align: center;
+  font-size: 1.3rem;
+  color: #ccc;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
