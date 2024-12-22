@@ -2,19 +2,28 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './App.css';
 
-
 function App() {
   const [foods, setFoods] = useState([]);
   const [cart, setCart] = useState([]);
   const [tableNumber, setTableNumber] = useState('');
   const [note, setNote] = useState('');
 
+  // Lấy danh sách món ăn từ API
   useEffect(() => {
     const fetchFoods = async () => {
       const { data } = await axios.get('http://localhost:5000/api/foods');
       setFoods(data);
     };
     fetchFoods();
+  }, []);
+
+  // Lấy số bàn từ URL khi tải trang
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const tableFromUrl = params.get('tableNumber');
+    if (tableFromUrl) {
+      setTableNumber(tableFromUrl); // Đặt số bàn từ URL
+    }
   }, []);
 
   const addToCart = (food) => {
