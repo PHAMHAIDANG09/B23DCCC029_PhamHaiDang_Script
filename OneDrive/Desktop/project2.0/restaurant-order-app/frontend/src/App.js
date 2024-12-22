@@ -59,13 +59,23 @@ function App() {
         <h1>Menu</h1>
         <ul className="food-list">
           {foods.map(food => (
-            <li key={food._id} className="food-item">
-              <span>{food.name} - ${food.price}</span>
+              <li key={food._id} className="food-item">
+              <img 
+                src={`http://localhost:5000/uploads/${food.image}`} 
+                alt={food.name} 
+                className="food-image" 
+              />
+              <div className="food-details">
+                <span>{food.name}</span>
+                <span className="price">${food.price}</span>
+              </div>
               <button onClick={() => addToCart(food)}>Thêm vào giỏ hàng</button>
             </li>
+            
           ))}
         </ul>
       </div>
+
 
       {/* Phần giỏ hàng */}
       <div className="cart-container">
